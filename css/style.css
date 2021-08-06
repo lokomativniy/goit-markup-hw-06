@@ -236,6 +236,10 @@ ul {
   background: #FFFFFF;
   text-align: right;
 }
+.form{
+  padding: 40px;
+  text-align: center;
+}
 .section {
   padding: 94px 0;
 }
@@ -499,6 +503,7 @@ ul {
 .footer {
   background: var(--background-color);
   padding: 60px 0;
+  
 }
 .container-footer {
   display: flex;
@@ -537,8 +542,49 @@ ul {
 }
 
 .social-box{
-  width: 206px;
-  margin: 12px 0 0 70px;
+  margin: 12px 93px 0 70px;
+}
+.e-mail-input{
+  margin-top: 12px;
+}
+.form{
+  padding: 0;
+  text-align: left;
+}
+.form-input{
+  font: inherit;
+  margin-right: 12px;
+  padding: 15px 15px 16px;
+  background-color: var(--background-color) ;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  
+}
+.form-input input::placeholder{
+  color: red;
+  font-style: 16px;
+}
+
+.btn-input{
+  padding: 10px 28px 10px 29px;
+  color:var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-style: 16px;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  
+
+}
+.icon-btn{
+  fill: #FFFFFF;
+  margin-left: 10px;
 }
 .social-box-title{
   display: inline-block;
