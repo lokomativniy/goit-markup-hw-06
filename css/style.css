@@ -196,14 +196,15 @@ ul {
   
 }
 .btn-close{
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin: 8px 8px 0 0;
-  margin-left: auto;
+  top: 8px;
+  right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
   border-radius: 50%;
@@ -235,6 +236,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%,-50%);
   min-height: 581px;
   min-width: 528px;
@@ -242,7 +244,6 @@ ul {
   background: #FFFFFF;
 }
 .form{
- padding: 6px 40px;
   
 }
 .modal-title{
@@ -250,24 +251,25 @@ ul {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
-.form-field{
+.form-field{ 
   position: relative;
-  margin-bottom: 28px; 
+  margin-bottom: 10px;
 }
 .form :nth-child(5){
-  margin-bottom: 7px;
+  margin-bottom: 20px;
 }
 
+
 .form-label{
-  position: absolute;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
   color: var(--text-color);
-  top: -18px;
-  left: 0;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01em; 
 }
 .input{
   width: 100%;
@@ -277,17 +279,18 @@ ul {
   border-radius: 4px; 
   transition: border-color 250ms var(--timing-function)
 }
-.input:focus + .form-icon,.input:hover + .form-icon{
+.input:focus + .form-icon{
   fill:var(--accent-color);
 }
-.input:focus,.textarea:focus,.input:hover,.textarea:hover{
+.input:focus,.textarea:focus{
   border-color: var(--accent-color);
   outline: none;
 }
 
 .form-icon{
   position: absolute;
-  top: 11px;
+  top: 50%;
+  left: 50%;
   left: 12px;
   fill: var(--primary-text-color);
   transition: fill 250ms var(--timing-function)
@@ -617,9 +620,8 @@ margin-bottom: 30px;
 }
 .container-footer {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  align-items: baseline;
+  
 }
 .logo-footer {
   color: var(--accent-color);
@@ -652,10 +654,10 @@ margin-bottom: 30px;
 }
 
 .social-box{
-  margin: 12px 93px 0 70px;
+  margin-left: 70px;
 }
 .e-mail-input{
-  margin-top: 12px;
+  margin-left: 93px;
 }
 .form-footer{
   display: flex;
